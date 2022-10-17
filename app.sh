@@ -4,7 +4,7 @@ sudo apt autoremove --purge
 sudo apt autoclean
 sudo apt install nginx unzip php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip php-fpm php-mysql -y
 sudo wget https://wordpress.org/latest.zip
-sudo unzip master.zip
+sudo unzip latest.zip
 cd wordpress/
 sudo cp -r * /var/www/html/
 sudo chown -R www-data:www-data /var/www/html/
