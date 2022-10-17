@@ -2,7 +2,7 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt autoremove --purge
 sudo apt autoclean
-sudo apt install nginx unzip awscli php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip php-fpm php-mysql -y
+sudo apt install nginx unzip php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip php-fpm php-mysql -y
 sudo wget https://github.com/aarshsqaureops/wordpress/archive/refs/heads/master.zip
 sudo unzip master.zip
 cd wordpress-master/
