@@ -9,7 +9,7 @@ cd wordpress-master/
 sudo cp -r * /var/www/html/
 sudo chown -R www-data:www-data /var/www/html/
 cd /etc/nginx/sites-enabled/
-sudo wget https://github.com/aarshsqaureops/nginx-configuration/archive/refs/heads/main.zip
+sudo wget https://wordpress.org/latest.zip
 sudo unzip main.zip
 sudo mv nginx-configuration-main/wordpress /etc/nginx/sites-enabled/
 sudo systemctl reload php7.4-fpm.service
