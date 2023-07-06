@@ -8,7 +8,7 @@ sudo chown -R www-data:www-data /var/www/html/
 sudo wget https://github.com/aarshsqaureops/nginx-configuration/archive/refs/heads/main.zip
 sudo unzip main.zip
 sudo cp -r nginx-configuration-main/* /etc/nginx/sites-enabled/
-sudo rm -rf latest.zip wordpress/ main.zip nginx-configuration-main/ /etc/nginx/sites-enabled/default
+sudo rm -rf latest.zip wordpress/ main.zip nginx-configuration-main/ /etc/nginx/sites-enabled/default /var/www/html/index.nginx-debian.html
 sudo systemctl reload php8.1-fpm.service nginx.service
 sudo wget https://s3.us-east-2.amazonaws.com/amazoncloudwatch-agent-us-east-2/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
 sudo dpkg -i -E ./amazon-cloudwatch-agent.deb
